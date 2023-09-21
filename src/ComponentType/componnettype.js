@@ -1,8 +1,12 @@
 import React from 'react'
 
 export function Functiontype(){
+    var name = 'Persistent!!' 
     return(
-        <h1>Function Component Type!</h1>
+        <div>
+            <h1>Function Component Type!</h1>
+        <h1>Interpolation Syntax  {name}</h1>
+        </div>
     )
 }
 
