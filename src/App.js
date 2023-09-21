@@ -1,12 +1,14 @@
 // import logo from './logo.svg';
 import './App.css';
 import Classtype, {Functiontype} from './ComponentType/componnettype.js'
+import Profile from './props/profileComponent';
 
 function App() {
   return (
     <div>
       <Functiontype />
       <Classtype />
+      <Profile userName = 'surbhi'  userId = '101' />
     </div>
     // <div className="App">
     //   <header className="App-header">
