@@ -2,6 +2,7 @@
 import './App.css';
 import Classtype, {Functiontype} from './ComponentType/componnettype.js'
 import Profile from './props/profileComponent';
+import MessageComponent from './Day2/states/MessageComponent';
 
 function App() {
   return (
@@ -9,6 +10,8 @@ function App() {
       <Functiontype />
       <Classtype />
       <Profile userName = 'surbhi'  userId = '101' />
+
+      <MessageComponent/>
     </div>
     // <div className="App">
     //   <header className="App-header">
