@@ -5,13 +5,14 @@ import Profile from './props/profileComponent';
 import MessageComponent from './Day2/states/MessageComponent';
 
 function App() {
+  let user = {empid: 10, empName: 'surbhi'}
   return (
     <div>
       <Functiontype />
       <Classtype />
       <Profile userName = 'surbhi'  userId = '101' />
 
-      <MessageComponent/>
+      <MessageComponent user = {user}/>
     </div>
     // <div className="App">
     //   <header className="App-header">
