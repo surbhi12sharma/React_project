@@ -1,5 +1,5 @@
-import ChildCom from "../Day2/child";
-import UserObjCom from "../Day2/userObjCom";
+import ChildCom from "../Day2/props/child";
+import UserObjCom from "../Day2/props/userObjCom";
 
 function Profile(props){
     let user = {userName: 'soumya', userId:102}

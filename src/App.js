@@ -4,17 +4,23 @@ import Classtype, {Functiontype} from './ComponentType/componnettype.js'
 import Profile from './props/profileComponent';
 import MessageComponent from './Day2/states/MessageComponent';
 import UseEffectExample from './Day2/states/useEffectExample';
+import ClassComponent from './Day2/class/classComponent';
+import ClassState from './Day2/class/classState';
 
 function App() {
   let user = {empid: 10, empName: 'surbhi'}
   return (
     <div>
-      <Functiontype />
+      {/* <Functiontype />
       <Classtype />
       <Profile userName = 'surbhi'  userId = '101' />
       <MessageComponent user = {user}/>
 
       <UseEffectExample/>
+
+      <div>*************</div>
+      <ClassComponent userName = 'surbhi'  userId = '101' /> */}
+      <ClassState/>
     </div>
     // <div className="App">
     //   <header className="App-header">
