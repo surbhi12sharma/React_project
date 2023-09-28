@@ -3,6 +3,7 @@ import './App.css';
 import Classtype, {Functiontype} from './ComponentType/componnettype.js'
 import Profile from './props/profileComponent';
 import MessageComponent from './Day2/states/MessageComponent';
+import UseEffectExample from './Day2/states/useEffectExample';
 
 function App() {
   let user = {empid: 10, empName: 'surbhi'}
@@ -11,8 +12,9 @@ function App() {
       <Functiontype />
       <Classtype />
       <Profile userName = 'surbhi'  userId = '101' />
-
       <MessageComponent user = {user}/>
+
+      <UseEffectExample/>
     </div>
     // <div className="App">
     //   <header className="App-header">
