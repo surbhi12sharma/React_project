@@ -12,6 +12,7 @@ import LoginPage from './ComponentType/Day3/LoginPage/loginPage'
 import { useState } from 'react';
 import PageHeader from './ComponentType/Day3/LoginPage/Header';
 import LoginJsx from './ComponentType/Day3/LoginJSX/login.jsx'
+import ControlledComp from './ComponentType/Day3/Controlled_uncontrolled_Components/controlledComp'
 
 function App() {
   let user = {empid: 10, empName: 'surbhi'}
@@ -32,8 +33,9 @@ function App() {
       {/* Day 3 */}
       {/* <PHeader/> */}
       {/* <ProductList/> */}
-      {userName===""  ? <LoginPage setUserName={setUserName} /> : <PageHeader userName={userName}/>}
+      {/* {userName===""  ? <LoginPage setUserName={setUserName} /> : <PageHeader userName={userName}/>} */}
       {/* <LoginJsx/> */}
+      <ControlledComp/>
     </div>
     // <div className="App">
     //   <header className="App-header">
