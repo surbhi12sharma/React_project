@@ -11,6 +11,7 @@ import ProductList from './ComponentType/Day3/productlist/ProductList';
 import LoginPage from './ComponentType/Day3/LoginPage/loginPage'
 import { useState } from 'react';
 import PageHeader from './ComponentType/Day3/LoginPage/Header';
+import LoginJsx from './ComponentType/Day3/LoginJSX/login.jsx'
 
 function App() {
   let user = {empid: 10, empName: 'surbhi'}
@@ -32,6 +33,7 @@ function App() {
       {/* <PHeader/> */}
       {/* <ProductList/> */}
       {userName===""  ? <LoginPage setUserName={setUserName} /> : <PageHeader userName={userName}/>}
+      {/* <LoginJsx/> */}
     </div>
     // <div className="App">
     //   <header className="App-header">
