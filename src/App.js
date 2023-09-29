@@ -6,9 +6,15 @@ import MessageComponent from './Day2/states/MessageComponent';
 import UseEffectExample from './Day2/states/useEffectExample';
 import ClassComponent from './Day2/class/classComponent';
 import ClassState from './Day2/class/classState';
+import PHeader from './ComponentType/Day3/ComponentComunication/PHeader';
+import ProductList from './ComponentType/Day3/productlist/ProductList';
+import LoginPage from './ComponentType/Day3/LoginPage/loginPage'
+import { useState } from 'react';
+import PageHeader from './ComponentType/Day3/LoginPage/Header';
 
 function App() {
   let user = {empid: 10, empName: 'surbhi'}
+  let [userName, setUserName] = useState("")
   return (
     <div>
       {/* <Functiontype />
@@ -20,7 +26,12 @@ function App() {
 
       <div>*************</div>
       <ClassComponent userName = 'surbhi'  userId = '101' /> */}
-      <ClassState/>
+      {/* <ClassState/> */}
+
+      {/* Day 3 */}
+      {/* <PHeader/> */}
+      {/* <ProductList/> */}
+      {userName===""  ? <LoginPage setUserName={setUserName} /> : <PageHeader userName={userName}/>}
     </div>
     // <div className="App">
     //   <header className="App-header">
