@@ -13,6 +13,11 @@ import { useState } from 'react';
 import PageHeader from './ComponentType/Day3/LoginPage/Header';
 import LoginJsx from './ComponentType/Day3/LoginJSX/login.jsx'
 import ControlledComp from './ComponentType/Day3/Controlled_uncontrolled_Components/controlledComp'
+import Uncontrolled from './ComponentType/Day3//Controlled_uncontrolled_Components/UncontollesComp'
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+import SimpleRouting from './ComponentType/Day3/Routing/SimpleRouting';
+import EmpList from './ComponentType/Day3/Routing/empList';
+
 
 function App() {
   let user = {empid: 10, empName: 'surbhi'}
@@ -35,7 +40,13 @@ function App() {
       {/* <ProductList/> */}
       {/* {userName===""  ? <LoginPage setUserName={setUserName} /> : <PageHeader userName={userName}/>} */}
       {/* <LoginJsx/> */}
-      <ControlledComp/>
+      {/* <ControlledComp/> */}
+      {/* <Uncontrolled/> */}
+
+      {/* <BrowserRouter>
+      <SimpleRouting/>
+      </BrowserRouter> */}
+      <EmpList/>
     </div>
     // <div className="App">
     //   <header className="App-header">
