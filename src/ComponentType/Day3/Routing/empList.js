@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import EmpObj from "./empAPI";
+import Header from "./Header";
 function EmpList() {
   let empList = EmpObj.getAllEmps();
   return (
-    <ul>
+    <>
+        <ul>
       {/* {empList.map(emp=>{
                 <li>
                     emp.empid
@@ -22,7 +24,7 @@ function EmpList() {
         empList.map(
           (listItem, key) => (
             <li>
-              <Link to={`employees/${listItem.empId}`}><p key={empList.empid}>{listItem.empName}</p></Link>
+              <Link to={`employedpage/${listItem.empid}`}><p key={empList.empid}>{listItem.empName}</p></Link>
             </li>
           )
           // <tr>
@@ -35,6 +37,7 @@ function EmpList() {
         //42 Time
       }
     </ul>
+    </>
   );
 }
 

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, Route, Routes } from 'react-router-dom';
-
+import EmpList from "./empList";
+import EmployeesDetails from "./EmployeesDetails";
 function SimpleRouting(){
     return(
         <>
@@ -10,22 +11,27 @@ function SimpleRouting(){
                         <Link to ='/'>Home</Link>
                     </li>
                     <li>
-                        <Link to ='/aboutus'>About Us</Link>
+                        <Link to ='/employedpage'>Employed Page</Link>
                     </li>
                 </ul>
             </nav>
             <Routes>
                 <Route path="/" element={<Home/>}></Route>
-                <Route path="/aboutus" element={<AboutUs/>}></Route>
+                <Route path="/employedpage" element={<EmpList/>}></Route>
+                <Route path="/employedpage/employedpage/:id" element={<EmployeesDetails/>}></Route>
             </Routes>
         </>
     )
 }
 
+// function EmployeesDetails(){
+//     return <h1>employedpage</h1>   
+// }
+
 function Home(){
     return<h1>Home</h1>
 }
-function AboutUs(){
-    return<h1>About Us</h1>
-}
+// function AboutUs(){
+//     return<h1>Employed Page</h1>
+// }
 export default SimpleRouting;

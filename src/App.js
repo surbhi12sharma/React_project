@@ -43,10 +43,10 @@ function App() {
       {/* <ControlledComp/> */}
       {/* <Uncontrolled/> */}
 
-      {/* <BrowserRouter>
+      <BrowserRouter>
       <SimpleRouting/>
-      </BrowserRouter> */}
-      <EmpList/>
+      </BrowserRouter>
+      {/* <EmpList/> */}
     </div>
     // <div className="App">
     //   <header className="App-header">
